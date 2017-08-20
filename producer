@@ -1,0 +1,3 @@
+<?php global $argv;
+require_once 'vendor/autoload.php';
+echo Javanile\Producer::cli($argv);
