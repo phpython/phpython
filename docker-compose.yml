@@ -5,3 +5,5 @@ services:
     build:
       context: ./docker
       dockerfile: Dockerfile-phpython
+    volumes:
+    - ./:/var/www/html:rw
