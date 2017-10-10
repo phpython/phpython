@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Phpython\Lang;
 class Parser extends lime_parser {
 var $qi = 0;
 var $i = array (
@@ -59,7 +59,7 @@ var $i = array (
     'TRUE' => 's 119',
     'FALSE' => 's 120',
     'CLASS' => 's 254',
-    '\'classdef\'171' => 's 265',
+    '\'classdef\'170' => 's 265',
     'stmt_start' => 's 268',
     '\'start\'' => 'a \'start\'',
   ),
@@ -120,7 +120,7 @@ var $i = array (
     'TRUE' => 's 119',
     'FALSE' => 's 120',
     'CLASS' => 's 254',
-    '\'classdef\'171' => 's 265',
+    '\'classdef\'170' => 's 265',
   ),
   2 => 
   array (
@@ -2075,6 +2075,56 @@ var $i = array (
   ),
   113 => 
   array (
+    'RBO' => 'r 160',
+    'SBO' => 'r 160',
+    'DOT' => 'r 160',
+    'DSTAR' => 'r 160',
+    'DSLASH' => 'r 160',
+    'MOD' => 'r 160',
+    'SLASH' => 'r 160',
+    'STAR' => 'r 160',
+    'MINUS' => 'r 160',
+    'PLUS' => 'r 160',
+    'RSHIFT' => 'r 160',
+    'LSHIFT' => 'r 160',
+    'AMPE' => 'r 160',
+    'ACUE' => 'r 160',
+    'PIPE' => 'r 160',
+    'LESS' => 'r 160',
+    'GREAT' => 'r 160',
+    'EQUAL' => 'r 160',
+    'GREATEQUAL' => 'r 160',
+    'LESSEQUAL' => 'r 160',
+    'DIFF' => 'r 160',
+    'NOTEQUAL' => 'r 160',
+    'IN' => 'r 160',
+    'NOT' => 'r 160',
+    'IS' => 'r 160',
+    'AND' => 'r 160',
+    'OR' => 'r 160',
+    'IF' => 'r 160',
+    'ASSIGN' => 'r 160',
+    'PLUSEQUAL' => 'r 160',
+    'MINUSEQUAL' => 'r 160',
+    'STAREQUAL' => 'r 160',
+    'SLASHEQUAL' => 'r 160',
+    'MODEQUAL' => 'r 160',
+    'AMPEQUAL' => 'r 160',
+    'PIPEEQUAL' => 'r 160',
+    'ACUEQUAL' => 'r 160',
+    'LSHIFTEQUAL' => 'r 160',
+    'RSHIFTEQUAL' => 'r 160',
+    'DSTAREQUAL' => 'r 160',
+    'DSLASHEQUAL' => 'r 160',
+    'NEWLINE' => 'r 160',
+    'COMMA' => 'r 160',
+    'ELSE' => 'r 160',
+    'RBC' => 'r 160',
+    'COLON' => 'r 160',
+    'SBC' => 'r 160',
+  ),
+  114 => 
+  array (
     'RBO' => 'r 161',
     'SBO' => 'r 161',
     'DOT' => 'r 161',
@@ -2123,7 +2173,7 @@ var $i = array (
     'COLON' => 'r 161',
     'SBC' => 'r 161',
   ),
-  114 => 
+  115 => 
   array (
     'RBO' => 'r 162',
     'SBO' => 'r 162',
@@ -2173,7 +2223,7 @@ var $i = array (
     'COLON' => 'r 162',
     'SBC' => 'r 162',
   ),
-  115 => 
+  116 => 
   array (
     'RBO' => 'r 163',
     'SBO' => 'r 163',
@@ -2223,7 +2273,7 @@ var $i = array (
     'COLON' => 'r 163',
     'SBC' => 'r 163',
   ),
-  116 => 
+  117 => 
   array (
     'RBO' => 'r 164',
     'SBO' => 'r 164',
@@ -2273,7 +2323,7 @@ var $i = array (
     'COLON' => 'r 164',
     'SBC' => 'r 164',
   ),
-  117 => 
+  118 => 
   array (
     'RBO' => 'r 165',
     'SBO' => 'r 165',
@@ -2323,7 +2373,7 @@ var $i = array (
     'COLON' => 'r 165',
     'SBC' => 'r 165',
   ),
-  118 => 
+  119 => 
   array (
     'RBO' => 'r 166',
     'SBO' => 'r 166',
@@ -2373,7 +2423,7 @@ var $i = array (
     'COLON' => 'r 166',
     'SBC' => 'r 166',
   ),
-  119 => 
+  120 => 
   array (
     'RBO' => 'r 167',
     'SBO' => 'r 167',
@@ -2423,109 +2473,59 @@ var $i = array (
     'COLON' => 'r 167',
     'SBC' => 'r 167',
   ),
-  120 => 
-  array (
-    'RBO' => 'r 168',
-    'SBO' => 'r 168',
-    'DOT' => 'r 168',
-    'DSTAR' => 'r 168',
-    'DSLASH' => 'r 168',
-    'MOD' => 'r 168',
-    'SLASH' => 'r 168',
-    'STAR' => 'r 168',
-    'MINUS' => 'r 168',
-    'PLUS' => 'r 168',
-    'RSHIFT' => 'r 168',
-    'LSHIFT' => 'r 168',
-    'AMPE' => 'r 168',
-    'ACUE' => 'r 168',
-    'PIPE' => 'r 168',
-    'LESS' => 'r 168',
-    'GREAT' => 'r 168',
-    'EQUAL' => 'r 168',
-    'GREATEQUAL' => 'r 168',
-    'LESSEQUAL' => 'r 168',
-    'DIFF' => 'r 168',
-    'NOTEQUAL' => 'r 168',
-    'IN' => 'r 168',
-    'NOT' => 'r 168',
-    'IS' => 'r 168',
-    'AND' => 'r 168',
-    'OR' => 'r 168',
-    'IF' => 'r 168',
-    'ASSIGN' => 'r 168',
-    'PLUSEQUAL' => 'r 168',
-    'MINUSEQUAL' => 'r 168',
-    'STAREQUAL' => 'r 168',
-    'SLASHEQUAL' => 'r 168',
-    'MODEQUAL' => 'r 168',
-    'AMPEQUAL' => 'r 168',
-    'PIPEEQUAL' => 'r 168',
-    'ACUEQUAL' => 'r 168',
-    'LSHIFTEQUAL' => 'r 168',
-    'RSHIFTEQUAL' => 'r 168',
-    'DSTAREQUAL' => 'r 168',
-    'DSLASHEQUAL' => 'r 168',
-    'NEWLINE' => 'r 168',
-    'COMMA' => 'r 168',
-    'ELSE' => 'r 168',
-    'RBC' => 'r 168',
-    'COLON' => 'r 168',
-    'SBC' => 'r 168',
-  ),
   121 => 
   array (
     'SBC' => 's 122',
   ),
   122 => 
   array (
-    'RBO' => 'r 160',
-    'SBO' => 'r 160',
-    'DOT' => 'r 160',
-    'DSTAR' => 'r 160',
-    'DSLASH' => 'r 160',
-    'MOD' => 'r 160',
-    'SLASH' => 'r 160',
-    'STAR' => 'r 160',
-    'MINUS' => 'r 160',
-    'PLUS' => 'r 160',
-    'RSHIFT' => 'r 160',
-    'LSHIFT' => 'r 160',
-    'AMPE' => 'r 160',
-    'ACUE' => 'r 160',
-    'PIPE' => 'r 160',
-    'LESS' => 'r 160',
-    'GREAT' => 'r 160',
-    'EQUAL' => 'r 160',
-    'GREATEQUAL' => 'r 160',
-    'LESSEQUAL' => 'r 160',
-    'DIFF' => 'r 160',
-    'NOTEQUAL' => 'r 160',
-    'IN' => 'r 160',
-    'NOT' => 'r 160',
-    'IS' => 'r 160',
-    'AND' => 'r 160',
-    'OR' => 'r 160',
-    'IF' => 'r 160',
-    'ASSIGN' => 'r 160',
-    'PLUSEQUAL' => 'r 160',
-    'MINUSEQUAL' => 'r 160',
-    'STAREQUAL' => 'r 160',
-    'SLASHEQUAL' => 'r 160',
-    'MODEQUAL' => 'r 160',
-    'AMPEQUAL' => 'r 160',
-    'PIPEEQUAL' => 'r 160',
-    'ACUEQUAL' => 'r 160',
-    'LSHIFTEQUAL' => 'r 160',
-    'RSHIFTEQUAL' => 'r 160',
-    'DSTAREQUAL' => 'r 160',
-    'DSLASHEQUAL' => 'r 160',
-    'NEWLINE' => 'r 160',
-    'COMMA' => 'r 160',
-    'ELSE' => 'r 160',
-    'RBC' => 'r 160',
-    'COLON' => 'r 160',
-    'SBC' => 'r 160',
+    'RBO' => 'r 159',
+    'SBO' => 'r 159',
+    'DOT' => 'r 159',
+    'DSTAR' => 'r 159',
+    'DSLASH' => 'r 159',
+    'MOD' => 'r 159',
+    'SLASH' => 'r 159',
+    'STAR' => 'r 159',
+    'MINUS' => 'r 159',
+    'PLUS' => 'r 159',
+    'RSHIFT' => 'r 159',
+    'LSHIFT' => 'r 159',
+    'AMPE' => 'r 159',
+    'ACUE' => 'r 159',
+    'PIPE' => 'r 159',
+    'LESS' => 'r 159',
+    'GREAT' => 'r 159',
+    'EQUAL' => 'r 159',
+    'GREATEQUAL' => 'r 159',
+    'LESSEQUAL' => 'r 159',
+    'DIFF' => 'r 159',
+    'NOTEQUAL' => 'r 159',
+    'IN' => 'r 159',
+    'NOT' => 'r 159',
+    'IS' => 'r 159',
+    'AND' => 'r 159',
+    'OR' => 'r 159',
+    'IF' => 'r 159',
+    'ASSIGN' => 'r 159',
+    'PLUSEQUAL' => 'r 159',
+    'MINUSEQUAL' => 'r 159',
+    'STAREQUAL' => 'r 159',
+    'SLASHEQUAL' => 'r 159',
+    'MODEQUAL' => 'r 159',
+    'AMPEQUAL' => 'r 159',
+    'PIPEEQUAL' => 'r 159',
+    'ACUEQUAL' => 'r 159',
+    'LSHIFTEQUAL' => 'r 159',
+    'RSHIFTEQUAL' => 'r 159',
+    'DSTAREQUAL' => 'r 159',
+    'DSLASHEQUAL' => 'r 159',
+    'NEWLINE' => 'r 159',
+    'COMMA' => 'r 159',
+    'ELSE' => 'r 159',
+    'RBC' => 'r 159',
+    'COLON' => 'r 159',
+    'SBC' => 'r 159',
   ),
   123 => 
   array (
@@ -4442,7 +4442,7 @@ var $i = array (
     'TRUE' => 's 119',
     'FALSE' => 's 120',
     'CLASS' => 's 254',
-    '\'classdef\'171' => 's 265',
+    '\'classdef\'170' => 's 265',
   ),
   231 => 
   array (
@@ -4501,7 +4501,7 @@ var $i = array (
     'TRUE' => 's 119',
     'FALSE' => 's 120',
     'CLASS' => 's 254',
-    '\'classdef\'171' => 's 265',
+    '\'classdef\'170' => 's 265',
   ),
   232 => 
   array (
@@ -5190,30 +5190,30 @@ var $i = array (
   ),
   260 => 
   array (
-    'ENDMARKER' => 'r 169',
-    'DEF' => 'r 169',
-    'IF' => 'r 169',
-    'WHILE' => 'r 169',
-    'CLASS' => 'r 169',
-    'PRINT' => 'r 169',
-    'RETURN' => 'r 169',
-    'IMPORT' => 'r 169',
-    'FROM' => 'r 169',
-    'lambdef' => 'r 169',
-    'NOT' => 'r 169',
-    'PLUS' => 'r 169',
-    'MINUS' => 'r 169',
-    'TILDE' => 'r 169',
-    'SBO' => 'r 169',
-    'BO' => 'r 169',
-    'NAME' => 'r 169',
-    'NUMBER' => 'r 169',
-    'STRING' => 'r 169',
-    'TRIPLEDOT' => 'r 169',
-    'NONE' => 'r 169',
-    'TRUE' => 'r 169',
-    'FALSE' => 'r 169',
-    'DEDENT' => 'r 169',
+    'ENDMARKER' => 'r 168',
+    'DEF' => 'r 168',
+    'IF' => 'r 168',
+    'WHILE' => 'r 168',
+    'CLASS' => 'r 168',
+    'PRINT' => 'r 168',
+    'RETURN' => 'r 168',
+    'IMPORT' => 'r 168',
+    'FROM' => 'r 168',
+    'lambdef' => 'r 168',
+    'NOT' => 'r 168',
+    'PLUS' => 'r 168',
+    'MINUS' => 'r 168',
+    'TILDE' => 'r 168',
+    'SBO' => 'r 168',
+    'BO' => 'r 168',
+    'NAME' => 'r 168',
+    'NUMBER' => 'r 168',
+    'STRING' => 'r 168',
+    'TRIPLEDOT' => 'r 168',
+    'NONE' => 'r 168',
+    'TRUE' => 'r 168',
+    'FALSE' => 'r 168',
+    'DEDENT' => 'r 168',
   ),
   261 => 
   array (
@@ -5268,11 +5268,34 @@ var $i = array (
   ),
   263 => 
   array (
-    'ENDMARKER' => 'r 170',
-    'DEF' => 'r 170',
-    'IF' => 'r 170',
-    'WHILE' => 'r 170',
-    'CLASS' => 'r 170',
+    'ENDMARKER' => 'r 169',
+    'DEF' => 'r 169',
+    'IF' => 'r 169',
+    'WHILE' => 'r 169',
+    'CLASS' => 'r 169',
+    'PRINT' => 'r 169',
+    'RETURN' => 'r 169',
+    'IMPORT' => 'r 169',
+    'FROM' => 'r 169',
+    'lambdef' => 'r 169',
+    'NOT' => 'r 169',
+    'PLUS' => 'r 169',
+    'MINUS' => 'r 169',
+    'TILDE' => 'r 169',
+    'SBO' => 'r 169',
+    'BO' => 'r 169',
+    'NAME' => 'r 169',
+    'NUMBER' => 'r 169',
+    'STRING' => 'r 169',
+    'TRIPLEDOT' => 'r 169',
+    'NONE' => 'r 169',
+    'TRUE' => 'r 169',
+    'FALSE' => 'r 169',
+    'DEDENT' => 'r 169',
+  ),
+  264 => 
+  array (
+    'NEWLINE' => 'r 170',
     'PRINT' => 'r 170',
     'RETURN' => 'r 170',
     'IMPORT' => 'r 170',
@@ -5291,29 +5314,6 @@ var $i = array (
     'NONE' => 'r 170',
     'TRUE' => 'r 170',
     'FALSE' => 'r 170',
-    'DEDENT' => 'r 170',
-  ),
-  264 => 
-  array (
-    'NEWLINE' => 'r 171',
-    'PRINT' => 'r 171',
-    'RETURN' => 'r 171',
-    'IMPORT' => 'r 171',
-    'FROM' => 'r 171',
-    'lambdef' => 'r 171',
-    'NOT' => 'r 171',
-    'PLUS' => 'r 171',
-    'MINUS' => 'r 171',
-    'TILDE' => 'r 171',
-    'SBO' => 'r 171',
-    'BO' => 'r 171',
-    'NAME' => 'r 171',
-    'NUMBER' => 'r 171',
-    'STRING' => 'r 171',
-    'TRIPLEDOT' => 'r 171',
-    'NONE' => 'r 171',
-    'TRUE' => 'r 171',
-    'FALSE' => 'r 171',
   ),
   265 => 
   array (
@@ -5364,30 +5364,30 @@ var $i = array (
   ),
   266 => 
   array (
-    'ENDMARKER' => 'r 172',
-    'DEF' => 'r 172',
-    'IF' => 'r 172',
-    'WHILE' => 'r 172',
-    'CLASS' => 'r 172',
-    'PRINT' => 'r 172',
-    'RETURN' => 'r 172',
-    'IMPORT' => 'r 172',
-    'FROM' => 'r 172',
-    'lambdef' => 'r 172',
-    'NOT' => 'r 172',
-    'PLUS' => 'r 172',
-    'MINUS' => 'r 172',
-    'TILDE' => 'r 172',
-    'SBO' => 'r 172',
-    'BO' => 'r 172',
-    'NAME' => 'r 172',
-    'NUMBER' => 'r 172',
-    'STRING' => 'r 172',
-    'TRIPLEDOT' => 'r 172',
-    'NONE' => 'r 172',
-    'TRUE' => 'r 172',
-    'FALSE' => 'r 172',
-    'DEDENT' => 'r 172',
+    'ENDMARKER' => 'r 171',
+    'DEF' => 'r 171',
+    'IF' => 'r 171',
+    'WHILE' => 'r 171',
+    'CLASS' => 'r 171',
+    'PRINT' => 'r 171',
+    'RETURN' => 'r 171',
+    'IMPORT' => 'r 171',
+    'FROM' => 'r 171',
+    'lambdef' => 'r 171',
+    'NOT' => 'r 171',
+    'PLUS' => 'r 171',
+    'MINUS' => 'r 171',
+    'TILDE' => 'r 171',
+    'SBO' => 'r 171',
+    'BO' => 'r 171',
+    'NAME' => 'r 171',
+    'NUMBER' => 'r 171',
+    'STRING' => 'r 171',
+    'TRIPLEDOT' => 'r 171',
+    'NONE' => 'r 171',
+    'TRUE' => 'r 171',
+    'FALSE' => 'r 171',
+    'DEDENT' => 'r 171',
   ),
   267 => 
   array (
@@ -5418,7 +5418,7 @@ var $i = array (
   ),
   268 => 
   array (
-    '#' => 'r 173',
+    '#' => 'r 172',
   ),
 );
 function reduce_0_stmt_start_1($tokens, &$result) {
@@ -6658,7 +6658,7 @@ function reduce_154_testlist_comp_2($tokens, &$result) {
 # (154) testlist_comp :=  test  test_tail
 #
 $result = reset($tokens);
- $result = array("ciao"); echo "ad"; 
+
 }
 
 function reduce_155_testlist_comp_3($tokens, &$result) {
@@ -6690,124 +6690,116 @@ function reduce_158_test_tail_2($tokens, &$result) {
 # (158) test_tail :=  COMMA  test
 #
 $result = reset($tokens);
-echo "as";
+
 }
 
-function reduce_159_test_tail_3($tokens, &$result) {
+function reduce_159_atom_1($tokens, &$result) {
 #
-# (159) test_tail :=
+# (159) atom :=  SBO  testlist_comp  SBC
 #
 $result = reset($tokens);
 
 }
 
-function reduce_160_atom_1($tokens, &$result) {
+function reduce_160_atom_2($tokens, &$result) {
 #
-# (160) atom :=  SBO  testlist_comp  SBC
-#
-$result = reset($tokens);
- $result = python_list($tokens[1]); 
-}
-
-function reduce_161_atom_2($tokens, &$result) {
-#
-# (161) atom :=  BO  dictorsetmaker  BC
+# (160) atom :=  BO  dictorsetmaker  BC
 #
 $result = reset($tokens);
 
 }
 
-function reduce_162_atom_3($tokens, &$result) {
+function reduce_161_atom_3($tokens, &$result) {
 #
-# (162) atom :=  NAME
-#
-$result = reset($tokens);
-
-}
-
-function reduce_163_atom_4($tokens, &$result) {
-#
-# (163) atom :=  NUMBER
+# (161) atom :=  NAME
 #
 $result = reset($tokens);
 
 }
 
-function reduce_164_atom_5($tokens, &$result) {
+function reduce_162_atom_4($tokens, &$result) {
 #
-# (164) atom :=  STRING
-#
-$result = reset($tokens);
-
-}
-
-function reduce_165_atom_6($tokens, &$result) {
-#
-# (165) atom :=  TRIPLEDOT
+# (162) atom :=  NUMBER
 #
 $result = reset($tokens);
 
 }
 
-function reduce_166_atom_7($tokens, &$result) {
+function reduce_163_atom_5($tokens, &$result) {
 #
-# (166) atom :=  NONE
-#
-$result = reset($tokens);
-
-}
-
-function reduce_167_atom_8($tokens, &$result) {
-#
-# (167) atom :=  TRUE
+# (163) atom :=  STRING
 #
 $result = reset($tokens);
 
 }
 
-function reduce_168_atom_9($tokens, &$result) {
+function reduce_164_atom_6($tokens, &$result) {
 #
-# (168) atom :=  FALSE
-#
-$result = reset($tokens);
-
-}
-
-function reduce_169_classdef_1($tokens, &$result) {
-#
-# (169) classdef :=  CLASS  NAME  RBO  testlist  RBC  COLON  suite
+# (164) atom :=  TRIPLEDOT
 #
 $result = reset($tokens);
 
 }
 
-function reduce_170_classdef_2($tokens, &$result) {
+function reduce_165_atom_7($tokens, &$result) {
 #
-# (170) classdef :=  CLASS  NAME  RBO  RBC  COLON  suite
+# (165) atom :=  NONE
 #
 $result = reset($tokens);
 
 }
 
-function reduce_171_classdef171_1($tokens, &$result) {
+function reduce_166_atom_8($tokens, &$result) {
 #
-# (171) 'classdef'171 :=  CLASS  NAME  COLON
+# (166) atom :=  TRUE
+#
+$result = reset($tokens);
+
+}
+
+function reduce_167_atom_9($tokens, &$result) {
+#
+# (167) atom :=  FALSE
+#
+$result = reset($tokens);
+
+}
+
+function reduce_168_classdef_1($tokens, &$result) {
+#
+# (168) classdef :=  CLASS  NAME  RBO  testlist  RBC  COLON  suite
+#
+$result = reset($tokens);
+
+}
+
+function reduce_169_classdef_2($tokens, &$result) {
+#
+# (169) classdef :=  CLASS  NAME  RBO  RBC  COLON  suite
+#
+$result = reset($tokens);
+
+}
+
+function reduce_170_classdef170_1($tokens, &$result) {
+#
+# (170) 'classdef'170 :=  CLASS  NAME  COLON
 #
 $result = reset($tokens);
  lang_python_stmt::class_begin($tokens[1]); 
 }
 
-function reduce_172_classdef_3($tokens, &$result) {
+function reduce_171_classdef_3($tokens, &$result) {
 #
-# (172) classdef :=  'classdef'171  suite
+# (171) classdef :=  'classdef'170  suite
 #
 $result = reset($tokens);
  lang_python_stmt::class_end(); 
 }
 
-function reduce_173_start_1($tokens, &$result) {
+function reduce_172_start_1($tokens, &$result) {
 #
-# (173) 'start' :=  stmt_start
+# (172) 'start' :=  stmt_start
 #
 $result = reset($tokens);
 
@@ -6973,21 +6965,20 @@ var $method = array (
   156 => 'reduce_156_testlist_comp_4',
   157 => 'reduce_157_test_tail_1',
   158 => 'reduce_158_test_tail_2',
-  159 => 'reduce_159_test_tail_3',
-  160 => 'reduce_160_atom_1',
-  161 => 'reduce_161_atom_2',
-  162 => 'reduce_162_atom_3',
-  163 => 'reduce_163_atom_4',
-  164 => 'reduce_164_atom_5',
-  165 => 'reduce_165_atom_6',
-  166 => 'reduce_166_atom_7',
-  167 => 'reduce_167_atom_8',
-  168 => 'reduce_168_atom_9',
-  169 => 'reduce_169_classdef_1',
-  170 => 'reduce_170_classdef_2',
-  171 => 'reduce_171_classdef171_1',
-  172 => 'reduce_172_classdef_3',
-  173 => 'reduce_173_start_1',
+  159 => 'reduce_159_atom_1',
+  160 => 'reduce_160_atom_2',
+  161 => 'reduce_161_atom_3',
+  162 => 'reduce_162_atom_4',
+  163 => 'reduce_163_atom_5',
+  164 => 'reduce_164_atom_6',
+  165 => 'reduce_165_atom_7',
+  166 => 'reduce_166_atom_8',
+  167 => 'reduce_167_atom_9',
+  168 => 'reduce_168_classdef_1',
+  169 => 'reduce_169_classdef_2',
+  170 => 'reduce_170_classdef170_1',
+  171 => 'reduce_171_classdef_3',
+  172 => 'reduce_172_start_1',
 );
 var $a = array (
   0 => 
@@ -7946,8 +7937,8 @@ var $a = array (
   ),
   159 => 
   array (
-    'symbol' => 'test_tail',
-    'len' => 0,
+    'symbol' => 'atom',
+    'len' => 3,
     'replace' => true,
   ),
   160 => 
@@ -7959,7 +7950,7 @@ var $a = array (
   161 => 
   array (
     'symbol' => 'atom',
-    'len' => 3,
+    'len' => 1,
     'replace' => true,
   ),
   162 => 
@@ -8000,35 +7991,29 @@ var $a = array (
   ),
   168 => 
   array (
-    'symbol' => 'atom',
-    'len' => 1,
+    'symbol' => 'classdef',
+    'len' => 7,
     'replace' => true,
   ),
   169 => 
   array (
     'symbol' => 'classdef',
-    'len' => 7,
+    'len' => 6,
     'replace' => true,
   ),
   170 => 
   array (
-    'symbol' => 'classdef',
-    'len' => 6,
-    'replace' => true,
-  ),
-  171 => 
-  array (
-    'symbol' => '\'classdef\'171',
+    'symbol' => '\'classdef\'170',
     'len' => 3,
     'replace' => false,
   ),
-  172 => 
+  171 => 
   array (
     'symbol' => 'classdef',
     'len' => 5,
     'replace' => true,
   ),
-  173 => 
+  172 => 
   array (
     'symbol' => '\'start\'',
     'len' => 1,

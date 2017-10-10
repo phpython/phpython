@@ -1,7 +1,0 @@
-> > Producer: command-line tool to develop vendor code
-
-  Usage: php producer <command> ...
-
-  init
-  init <url>
-  clone <url>

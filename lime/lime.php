@@ -877,6 +877,9 @@ function parse_lime_grammar($path) {
 	}
 }
 
+// IMPORTANT
+// use lime.php as require_once library not as cli tool.
+return;
 
 if (@$_SERVER['argv']) {
 	$code = '';
