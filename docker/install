@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /var/www/html
+
+su - phpython -c "composer install"
+

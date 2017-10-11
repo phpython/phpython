@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /var/www/html
+
+su - phpython -c "whoami"
+
+su - phpython -c "id -u -n"
+
+
